@@ -109,7 +109,7 @@ export default env => {
     output: {
       clean: true,
       path: path.join(dirname, 'build', platform),
-      filename: 'index.bundle',
+      filename: 'miniapp.bundle',
       chunkFilename: '[name].chunk.bundle',
       publicPath: Repack.getPublicPath({platform, devServer}),
     },
