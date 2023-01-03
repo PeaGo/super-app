@@ -255,22 +255,22 @@ export default env => {
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
-            // eager: STANDALONE, // to be figured out
+            eager: STANDALONE, // to be figured out
             requiredVersion: '17.0.2',
           },
           'react-native': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            // eager: STANDALONE, // to be figured out
+            eager: STANDALONE, // to be figured out
             requiredVersion: '0.66.4',
           },
           'react-native-gesture-handler': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            // eager: STANDALONE, // to be figured out
+            eager: STANDALONE, // to be figured out
             requiredVersion: '1.9.0',
           },
           'react-native-screens': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            // eager: STANDALONE, // to be figured out
+            eager: STANDALONE, // to be figured out
             requiredVersion: '3.18.2',
           },
         },
