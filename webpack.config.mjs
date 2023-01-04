@@ -109,7 +109,7 @@ export default env => {
     output: {
       clean: true,
       path: path.join(dirname, 'build', platform),
-      filename: 'index.bundle',
+      filename: 'miniapp.bundle',
       chunkFilename: '[name].chunk.bundle',
       publicPath: Repack.getPublicPath({platform, devServer}),
     },
@@ -276,7 +276,7 @@ export default env => {
             // eager: STANDALONE, // to be figured out
             requiredVersion: '3.18.2',
           },
-          'react-native-reanimated': {
+           'react-native-reanimated': {
             singleton: true,
             eager: true,
             requiredVersion: '2.13.0',

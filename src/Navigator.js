@@ -39,8 +39,8 @@ const Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Screen2" component={Screen2} />
         <Stack.Screen name="HomeMiniApp" component={HomeScreen} />
+        <Stack.Screen name="Screen2" component={Screen2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
