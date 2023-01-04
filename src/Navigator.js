@@ -1,5 +1,12 @@
 import React from 'react';
-import {Button, StyleSheet, Text, useColorScheme, View} from 'react-native';
+import {
+  Alert,
+  Button,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -15,7 +22,8 @@ const HomeScreen = props => {
       <Button
         title=" Go To Mini App Screen 1"
         onPress={() => {
-          props.navigation.navigate(Screen2);
+          props.navigation.navigate('Screen2');
+          Alert.alert('ok', ' oko ko k ok ');
         }}
       />
     </View>
