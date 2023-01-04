@@ -109,7 +109,7 @@ export default env => {
     output: {
       clean: true,
       path: path.join(dirname, 'build', platform),
-      filename: 'miniapp.bundle',
+      filename: 'index.bundle',
       chunkFilename: '[name].chunk.bundle',
       publicPath: Repack.getPublicPath({platform, devServer}),
     },
@@ -252,9 +252,7 @@ export default env => {
         exposes: {
           './App': './src/App.js',
         },
-        remotes: {
-          module1: 'module1@https://raw.githubusercontent.com/PeaGo/super-app/main/build/ios/miniapp.bundle',
-        },
+
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
@@ -276,11 +274,14 @@ export default env => {
             // eager: STANDALONE, // to be figured out
             requiredVersion: '3.18.2',
           },
-           'react-native-reanimated': {
+          'react-native-reanimated': {
             singleton: true,
             eager: true,
             requiredVersion: '2.13.0',
           },
+        },
+        remotes: {
+          miniapp: 'miniapp@dynamic',
         },
       }),
     ],
