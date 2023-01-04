@@ -276,6 +276,11 @@ export default env => {
             // eager: STANDALONE, // to be figured out
             requiredVersion: '3.18.2',
           },
+          'react-native-reanimated': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '2.13.0',
+          },
         },
       }),
     ],
