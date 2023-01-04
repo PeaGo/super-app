@@ -20,7 +20,7 @@ const HomeScreen = props => {
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Home Screen</Text>
       <Button
-        title=" Go To Mini App Screen 2"
+        title=" Go To Mini App Sub Screen "
         onPress={() => {
           props.navigation.navigate('Screen2');
         }}
