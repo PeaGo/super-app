@@ -253,7 +253,7 @@ export default env => {
           './App': './src/App.js',
         },
         remotes: {
-          miniapp: 'miniapp@https://raw.githubusercontent.com/PeaGo/super-app/main/build/ios/miniapp.container.bundle',
+          module1: 'module1@https://raw.githubusercontent.com/PeaGo/super-app/main/build/ios/miniapp.container.bundle',
         },
         shared: {
           react: {
