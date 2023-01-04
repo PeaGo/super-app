@@ -252,6 +252,9 @@ export default env => {
         exposes: {
           './App': './src/App.js',
         },
+        remotes: {
+          module1: 'miniapp@dynamic',
+        },
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
