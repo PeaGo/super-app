@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 import React from 'react';
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 
 import {StyleSheet, useColorScheme, View} from 'react-native';
 
