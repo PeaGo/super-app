@@ -249,11 +249,11 @@ export default env => {
 
       new Repack.plugins.ModuleFederationPlugin({
         name: 'miniapp',
-        exposes: {
-          './App': './src/App.js',
-        },
+        // exposes: {
+        //   './App': './src/App.js',
+        // },
         remotes: {
-          module1: 'miniapp@dynamic',
+          miniapp: 'miniapp@https://raw.githubusercontent.com/PeaGo/super-app/main/build/outputs/ios/remotes/miniapp.container.bundle',
         },
         shared: {
           react: {
