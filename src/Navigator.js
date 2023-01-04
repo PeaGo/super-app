@@ -22,7 +22,8 @@ const HomeScreen = props => {
       <Button
         title=" Go To Mini App Sub Screen "
         onPress={() => {
-          props.navigation.navigate('Screen2');
+          // props.navigation.navigate('Screen2');
+          Alert.alert('ok', 'okokokokokokok');
         }}
       />
     </View>
