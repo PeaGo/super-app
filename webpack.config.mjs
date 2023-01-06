@@ -249,6 +249,7 @@ export default env => {
 
       new Repack.plugins.ModuleFederationPlugin({
         name: 'miniapp',
+        
         exposes: {
           './App': './src/App.js',
         },
