@@ -48,3 +48,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+// react-native bundle --dev false --entry-file index.js --bundle-output ios/main.jsbundle --platform ios
